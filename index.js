@@ -73,7 +73,7 @@ export default class AnimateNumber extends Component {
     // default values of state and non-state variables
     this.state = {
       value: this.props.initial ? this.props.initial : 0,
-      displayValue: 0
+      displayValue: this.props.initial ? this.props.initial : 0
     };
     this.dirty = false;
     this.startFrom = 0;
